@@ -55,3 +55,21 @@ curl -X POST http://localhost:8000/api/v1/inpaint/ -H "Authorization: Bearer <TO
 - Minimum: NVIDIA T4 (16GB VRAM)
 - Recommended: NVIDIA A10/A100 (24GB+ VRAM)
 - CPU fallback works for small images but is significantly slower.
+
+
+## Windows local troubleshooting (PostgreSQL host "db" error)
+If you run without Docker, make sure `.env` points to your local services:
+
+```env
+DATABASE_URL="postgresql+psycopg2://postgres:postgres@localhost:5432/ai_bg_remover"
+REDIS_URL="redis://localhost:6379/0"
+```
+
+Then run:
+
+```powershell
+cd backend
+.\.venv\Scripts\Activate.ps1
+alembic upgrade head
+uvicorn app.main:app --reload
+```
