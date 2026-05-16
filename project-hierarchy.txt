@@ -1,0 +1,72 @@
+ai_background_remover_backend_fastapi
+├─ .gitkeep
+├─ .vscode
+│  └─ settings.json
+└─ backend
+   ├─ alembic
+   │  ├─ env.py
+   │  ├─ script.py.mako
+   │  └─ versions
+   │     └─ 0001_init.py
+   ├─ alembic.ini
+   ├─ app
+   │  ├─ api
+   │  │  ├─ deps.py
+   │  │  ├─ router.py
+   │  │  ├─ routes
+   │  │  │  ├─ auth.py
+   │  │  │  ├─ background.py
+   │  │  │  ├─ health.py
+   │  │  │  ├─ inpaint.py
+   │  │  │  ├─ upscale.py
+   │  │  │  └─ __init__.py
+   │  │  └─ __init__.py
+   │  ├─ core
+   │  │  ├─ config.py
+   │  │  ├─ database.py
+   │  │  ├─ security.py
+   │  │  └─ __init__.py
+   │  ├─ main.py
+   │  ├─ models
+   │  │  ├─ image.py
+   │  │  ├─ user.py
+   │  │  └─ __init__.py
+   │  ├─ schemas
+   │  │  ├─ image.py
+   │  │  ├─ token.py
+   │  │  ├─ user.py
+   │  │  └─ __init__.py
+   │  ├─ services
+   │  │  ├─ background
+   │  │  │  ├─ birefnet.py
+   │  │  │  ├─ modnet.py
+   │  │  │  ├─ rmbg.py
+   │  │  │  └─ __init__.py
+   │  │  ├─ lama
+   │  │  │  ├─ inpaint.py
+   │  │  │  └─ __init__.py
+   │  │  ├─ sam2
+   │  │  │  ├─ predictor.py
+   │  │  │  └─ __init__.py
+   │  │  ├─ storage
+   │  │  │  ├─ local_storage.py
+   │  │  │  └─ __init__.py
+   │  │  ├─ upscale
+   │  │  │  ├─ realesrgan_service.py
+   │  │  │  └─ __init__.py
+   │  │  └─ __init__.py
+   │  ├─ tasks
+   │  │  ├─ worker.py
+   │  │  └─ __init__.py
+   │  ├─ utils
+   │  │  ├─ files.py
+   │  │  ├─ image.py
+   │  │  ├─ logger.py
+   │  │  └─ __init__.py
+   │  └─ __init__.py
+   ├─ Dockerfile
+   ├─ outputs
+   ├─ README.md
+   ├─ requirements.txt
+   ├─ run.py
+   └─ uploads

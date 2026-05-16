@@ -17,7 +17,7 @@ class Settings(BaseSettings):
     ALGORITHM: str = 'HS256'
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24
 
-    DATABASE_URL: str = 'postgresql+psycopg2://postgres:postgres@localhost:5432/ai_bg_remover'
+    DATABASE_URL: str = 'postgresql+psycopg2://postgres:@localhost:5432/ai_bg_remover'
     REDIS_URL: str = 'redis://localhost:6379/0'
 
     UPLOAD_DIR: str = str(BASE_DIR / 'uploads')

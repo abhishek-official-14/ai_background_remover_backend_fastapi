@@ -1,0 +1,82 @@
+# =========================
+# PYTHON
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Environment Variables
+.env
+.env.*
+
+# =========================
+# FASTAPI / UVICORN
+# =========================
+*.log
+
+# Uploads & Outputs
+backend/uploads/
+backend/outputs/
+
+# Alembic cache
+backend/alembic/__pycache__/
+
+# =========================
+# DATABASE
+# =========================
+*.db
+*.sqlite3
+
+# =========================
+# NODE / REACT / VITE
+# =========================
+node_modules/
+dist/
+build/
+
+# Vite
+.vite/
+
+# npm/yarn logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# VS CODE
+# =========================
+.vscode/
+
+# =========================
+# SYSTEM FILES
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# CACHE
+# =========================
+.cache/
+.pytest_cache/
+.mypy_cache/
+
+# =========================
+# MODELS / AI WEIGHTS
+# =========================
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+
+# =========================
+# TEMP FILES
+# =========================
+tmp/
+temp/
